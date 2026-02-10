@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Léo Quesnoit - Physics & Engineering Student at ISAE-SUPAERO, Toulouse. Background in applied physics, materials characterization, and scientific computing.">
+    <meta name="keywords"
+        content="physics, CERN, particle physics, materials science, instrumentation, scientific computing, ISAE-SUPAERO, CEA, data analysis, Python">
+    <title>Léo Quesnoit | Physics & Engineering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Hero Particles Canvas -->
+    <canvas id="hero-particles" class="hero-particles"></canvas>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">LQ</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Social Links Sidebar -->
+        <div class="social-sidebar">
+            <a href="https://linkedin.com/in/leo-quesnoit" target="_blank" rel="noopener" class="social-link"
+                aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+            </a>
+            <a href="https://github.com/leo-quesnoit" target="_blank" rel="noopener" class="social-link"
+                aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+            </a>
+            <div class="social-line"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Research Opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name">Léo Quesnoit</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text">Physics & Engineering Student</span>
+            </p>
+            <p class="hero-description">
+                Engineering student at <strong>ISAE-SUPAERO</strong> with a strong foundation in <strong>applied
+                    physics</strong>,
+                <strong>materials characterization</strong>, and <strong>scientific computing</strong>. Passionate about
+                fundamental research.
+            </p>
+            <div class="hero-buttons">
+                <a href="#experience" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Countries Worked</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="860">0</span>
+                    <span class="stat-label">TOEIC Score</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="orbit-container">
+                <div class="planet"></div>
+                <div class="orbit orbit-1">
+                    <div class="satellite satellite-1"></div>
+                </div>
+                <div class="orbit orbit-2">
+                    <div class="satellite satellite-2"></div>
+                </div>
+                <div class="orbit orbit-3">
+                    <div class="satellite satellite-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Passionate About Physics & Research</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a dedicated engineering student with a strong foundation in applied physics,
+                        materials science, and scientific instrumentation. My journey began with a curiosity
+                        for understanding fundamental phenomena and evolved into a passion for experimental research.
+                    </p>
+                    <p>
+                        With hands-on experience in <strong>materials characterization at CEA Grenoble</strong> and
+                        <strong>data analysis using Python and MATLAB</strong>, I am eager to contribute to cutting-edge
+                        research in particle physics and accelerator technology.
+                    </p>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"
+                                height="32">
+                                <path
+                                    d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611l-.573.097a9.057 9.057 0 01-6.124 0L13 20.313a2.253 2.253 0 01-1.067-3.611L13 15.3" />
+                            </svg>
+                        </div>
+                        <h4>Materials Research</h4>
+                        <p>Characterization & analysis</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"
+                                height="32">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="12" cy="12" r="1" />
+                            </svg>
+                        </div>
+                        <h4>Instrumentation</h4>
+                        <p>Sensors & measurement systems</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"
+                                height="32">
+                                <path
+                                    d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
+                            </svg>
+                        </div>
+                        <h4>Scientific Computing</h4>
+                        <p>Python, MATLAB, Data Analysis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-interests">
+                <h3>Research Interests</h3>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <span class="interest-icon">⚛</span>
+                        <span>Particle Physics</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">◎</span>
+                        <span>Accelerators</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">◆</span>
+                        <span>Detector Systems</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">⬡</span>
+                        <span>Data Analysis</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">⚙</span>
+                        <span>Scientific Computing</span>
+                    </div>
+                    <div class="interest-item">
+                        <span class="interest-icon">◉</span>
+                        <span>Instrumentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Path</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker current">
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-content clickable" data-modal="airbus">
+                        <!-- Satellite Communication Animation -->
+                        <div class="experience-animation satellite-animation">
+                            <svg viewBox="0 0 400 150" class="satellite-svg">
+                                <!-- Earth -->
+                                <circle cx="50" cy="75" r="35" class="earth" />
+                                <ellipse cx="50" cy="75" rx="35" ry="10" class="earth-ring" />
+                                <!-- Mars -->
+                                <circle cx="350" cy="75" r="25" class="mars" />
+                                <circle cx="342" cy="68" r="5" class="mars-crater" />
+                                <circle cx="355" cy="80" r="3" class="mars-crater" />
+                                <!-- Satellite near Mars -->
+                                <g class="satellite-ero" transform="translate(290, 45)">
+                                    <rect x="-8" y="-4" width="16" height="8" class="sat-body" />
+                                    <rect x="-25" y="-2" width="15" height="4" class="sat-panel" />
+                                    <rect x="10" y="-2" width="15" height="4" class="sat-panel" />
+                                    <circle cx="0" cy="0" r="2" class="sat-antenna" />
+                                </g>
+                                <!-- Signal waves from Earth to Satellite -->
+                                <g class="signal-group">
+                                    <path d="M 85 75 Q 150 40, 270 50" class="signal-path signal-1" />
+                                    <path d="M 85 75 Q 150 75, 270 50" class="signal-path signal-2" />
+                                    <path d="M 85 75 Q 150 110, 270 50" class="signal-path signal-3" />
+                                </g>
+                                <!-- Data packets -->
+                                <circle cx="0" cy="0" r="4" class="data-packet packet-1" />
+                                <circle cx="0" cy="0" r="4" class="data-packet packet-2" />
+                                <circle cx="0" cy="0" r="4" class="data-packet packet-3" />
+                                <!-- Labels -->
+                                <text x="50" y="125" class="planet-label">Earth</text>
+                                <text x="350" y="115" class="planet-label">Mars</text>
+                                <text x="290" y="30" class="sat-label">ERO</text>
+                            </svg>
+                        </div>
+                        <div class="timeline-header">
+                            <span class="timeline-date">2023 - Present</span>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <h3 class="timeline-title">Apprentice Engineer</h3>
+                        <h4 class="timeline-company">Airbus Defence and Space, Toulouse</h4>
+                        <p class="timeline-description">
+                            Working on the <strong>MSR-ERO (Mars Sample Return - Earth Return Orbiter)</strong> mission.
+                            Developing, testing and validating flight procedures for telemetry reception and
+                            telecommunication systems to bring samples from Mars back to Earth.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Space Operations</span>
+                            <span class="tag">Flight Procedures</span>
+                            <span class="tag">Telemetry</span>
+                            <span class="tag">Mars Mission</span>
+                        </div>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content clickable" data-modal="thailand">
+                        <!-- Neural Network Animation -->
+                        <div class="experience-animation neural-animation">
+                            <svg viewBox="0 0 400 150" class="neural-svg">
+                                <!-- Input Layer -->
+                                <g class="layer input-layer">
+                                    <circle cx="60" cy="35" r="12" class="neuron input-neuron n1" />
+                                    <circle cx="60" cy="75" r="12" class="neuron input-neuron n2" />
+                                    <circle cx="60" cy="115" r="12" class="neuron input-neuron n3" />
+                                </g>
+                                <!-- Hidden Layer 1 -->
+                                <g class="layer hidden-layer-1">
+                                    <circle cx="150" cy="25" r="10" class="neuron hidden-neuron h1" />
+                                    <circle cx="150" cy="55" r="10" class="neuron hidden-neuron h2" />
+                                    <circle cx="150" cy="85" r="10" class="neuron hidden-neuron h3" />
+                                    <circle cx="150" cy="115" r="10" class="neuron hidden-neuron h4" />
+                                </g>
+                                <!-- Hidden Layer 2 -->
+                                <g class="layer hidden-layer-2">
+                                    <circle cx="240" cy="40" r="10" class="neuron hidden-neuron h5" />
+                                    <circle cx="240" cy="75" r="10" class="neuron hidden-neuron h6" />
+                                    <circle cx="240" cy="110" r="10" class="neuron hidden-neuron h7" />
+                                </g>
+                                <!-- Output Layer -->
+                                <g class="layer output-layer">
+                                    <circle cx="330" cy="55" r="14" class="neuron output-neuron o1" />
+                                    <circle cx="330" cy="95" r="14" class="neuron output-neuron o2" />
+                                </g>
+                                <!-- Connections (drawn behind neurons) -->
+                                <g class="connections">
+                                    <!-- Input to Hidden 1 -->
+                                    <line x1="72" y1="35" x2="140" y2="25" class="synapse s1" />
+                                    <line x1="72" y1="35" x2="140" y2="55" class="synapse s2" />
+                                    <line x1="72" y1="75" x2="140" y2="55" class="synapse s3" />
+                                    <line x1="72" y1="75" x2="140" y2="85" class="synapse s4" />
+                                    <line x1="72" y1="115" x2="140" y2="85" class="synapse s5" />
+                                    <line x1="72" y1="115" x2="140" y2="115" class="synapse s6" />
+                                    <!-- Hidden 1 to Hidden 2 -->
+                                    <line x1="160" y1="25" x2="230" y2="40" class="synapse s7" />
+                                    <line x1="160" y1="55" x2="230" y2="40" class="synapse s8" />
+                                    <line x1="160" y1="55" x2="230" y2="75" class="synapse s9" />
+                                    <line x1="160" y1="85" x2="230" y2="75" class="synapse s10" />
+                                    <line x1="160" y1="85" x2="230" y2="110" class="synapse s11" />
+                                    <line x1="160" y1="115" x2="230" y2="110" class="synapse s12" />
+                                    <!-- Hidden 2 to Output -->
+                                    <line x1="250" y1="40" x2="316" y2="55" class="synapse s13" />
+                                    <line x1="250" y1="75" x2="316" y2="55" class="synapse s14" />
+                                    <line x1="250" y1="75" x2="316" y2="95" class="synapse s15" />
+                                    <line x1="250" y1="110" x2="316" y2="95" class="synapse s16" />
+                                </g>
+                                <!-- Data flow pulses -->
+                                <circle r="3" class="pulse pulse-1" />
+                                <circle r="3" class="pulse pulse-2" />
+                                <circle r="3" class="pulse pulse-3" />
+                                <!-- Energy icon (output) -->
+                                <text x="355" y="78" class="energy-icon">⚡</text>
+                            </svg>
+                        </div>
+                        <div class="timeline-header">
+                            <span class="timeline-date">2025</span>
+                            <span class="timeline-badge international">International</span>
+                        </div>
+                        <h3 class="timeline-title">Intern Engineer</h3>
+                        <h4 class="timeline-company">Burapha University, Thailand</h4>
+                        <p class="timeline-description">
+                            10-week internship in the Engineering Faculty. Developed and fine-tuned AI models
+                            to predict electricity consumption for new regions, contributing to sustainable
+                            energy management solutions.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Energy Prediction</span>
+                            <span class="tag">AI Models</span>
+                        </div>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content clickable" data-modal="cea">
+                        <!-- Materials Characterization Animation -->
+                        <div class="experience-animation materials-animation">
+                            <svg viewBox="0 0 400 150" class="materials-svg">
+                                <!-- Microscope -->
+                                <g class="microscope" transform="translate(60, 20)">
+                                    <rect x="-15" y="80" width="30" height="20" class="micro-base" />
+                                    <rect x="-4" y="40" width="8" height="45" class="micro-arm" />
+                                    <rect x="-8" y="30" width="16" height="15" class="micro-head" />
+                                    <circle cx="0" cy="25" r="8" class="micro-lens" />
+                                    <ellipse cx="0" cy="75" rx="20" ry="5" class="micro-stage" />
+                                </g>
+                                <!-- Sample on stage -->
+                                <rect x="50" y="88" width="20" height="3" class="sample" />
+                                <!-- Scanning beam -->
+                                <line x1="60" y1="55" x2="60" y2="85" class="scan-beam" />
+                                <!-- Magnified view (circular) -->
+                                <g class="magnified-view" transform="translate(220, 75)">
+                                    <circle cx="0" cy="0" r="55" class="view-border" />
+                                    <circle cx="0" cy="0" r="50" class="view-bg" />
+                                    <!-- Ink particles/grain structure -->
+                                    <circle cx="-25" cy="-20" r="8" class="particle p1" />
+                                    <circle cx="15" cy="-15" r="10" class="particle p2" />
+                                    <circle cx="-10" cy="15" r="12" class="particle p3" />
+                                    <circle cx="25" cy="10" r="7" class="particle p4" />
+                                    <circle cx="-30" cy="25" r="6" class="particle p5" />
+                                    <circle cx="5" cy="-30" r="5" class="particle p6" />
+                                    <circle cx="35" cy="-5" r="4" class="particle p7" />
+                                    <!-- Connections between particles -->
+                                    <line x1="-20" y1="-15" x2="10" y2="-10" class="ink-connection" />
+                                    <line x1="-5" y1="10" x2="20" y2="5" class="ink-connection" />
+                                    <line x1="-25" y1="20" x2="-10" y2="15" class="ink-connection" />
+                                </g>
+                                <!-- Zoom arrow -->
+                                <path d="M 85 75 C 110 75, 130 75, 165 75" class="zoom-arrow" />
+                                <polygon points="163,70 175,75 163,80" class="zoom-arrow-head" />
+                                <!-- Measurement overlay -->
+                                <g class="measurement" transform="translate(330, 40)">
+                                    <rect x="-25" y="0" width="50" height="70" class="measure-box" />
+                                    <line x1="-20" y1="15" x2="20" y2="15" class="measure-line" />
+                                    <line x1="-20" y1="15" x2="-20" y2="10" class="measure-tick" />
+                                    <line x1="20" y1="15" x2="20" y2="10" class="measure-tick" />
+                                    <text x="0" y="30" class="measure-text">2.5μm</text>
+                                    <!-- Conductivity bars -->
+                                    <rect x="-20" y="40" width="8" height="25" class="conduct-bar bar-1" />
+                                    <rect x="-6" y="50" width="8" height="15" class="conduct-bar bar-2" />
+                                    <rect x="8" y="45" width="8" height="20" class="conduct-bar bar-3" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="timeline-header">
+                            <span class="timeline-date">2023</span>
+                        </div>
+                        <h3 class="timeline-title">Research Intern</h3>
+                        <h4 class="timeline-company">CEA (French Alternative Energies Commission), Grenoble</h4>
+                        <p class="timeline-description">
+                            11-week internship in the DTNM (Department of New Materials Technology).
+                            Researched and applied protocols for electrical and morphological characterization
+                            of conductive inks printed by screen printing.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Materials Science</span>
+                            <span class="tag">Characterization</span>
+                            <span class="tag">Research</span>
+                        </div>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2022</span>
+                            <span class="timeline-badge international">International</span>
+                        </div>
+                        <h3 class="timeline-title">Volunteer</h3>
+                        <h4 class="timeline-company">Organic Farms, Norway & Denmark</h4>
+                        <p class="timeline-description">
+                            Volunteered on organic farms, contributing to sustainable agriculture through
+                            manual work to help renovate farms. Gained valuable international experience and
+                            cross-cultural skills.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Volunteering</span>
+                            <span class="tag">Sustainability</span>
+                            <span class="tag">International</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2021 - 2023</span>
+                        </div>
+                        <h3 class="timeline-title">Private Tutor</h3>
+                        <h4 class="timeline-company">Independent</h4>
+                        <p class="timeline-description">
+                            English and mathematics tutor, helping students reach their academic goals
+                            through personalized teaching methods and dedicated support.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Teaching</span>
+                            <span class="tag">Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card featured" data-aos="fade-up">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                            <path
+                                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                            <path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422M12 14v7" />
+                        </svg>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-years">2023 - 2026</span>
+                        <h3 class="edu-degree">Engineering Degree</h3>
+                        <h4 class="edu-school">ISAE-SUPAERO, Toulouse</h4>
+                        <p class="edu-description">
+                            Apprenticeship program specialized in industry and methods at one of Europe's
+                            leading aerospace engineering schools.
+                        </p>
+                        <div class="edu-badges">
+                            <span class="badge">Aerospace</span>
+                            <span class="badge">Industry Focus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-years">2021 - 2023</span>
+                        <h3 class="edu-degree">DUT in Applied Physics</h3>
+                        <h4 class="edu-school">IUT Annecy, France</h4>
+                        <p class="edu-description">
+                            Specialization in applied physics, materials and instrumentation.
+                            Strong foundation in scientific methodology and experimental techniques.
+                        </p>
+                        <div class="edu-badges">
+                            <span class="badge">Physics</span>
+                            <span class="badge">Materials</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card certifications" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edu-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <div class="edu-content">
+                        <span class="edu-years">2022</span>
+                        <h3 class="edu-degree">Diplomas & Certifications</h3>
+                        <ul class="edu-list">
+                            <li>Technician Diploma (DUT)</li>
+                            <li>BIA - Initiation to Aeronautics</li>
+                            <li>Driver's License</li>
+                            <li>Regional Champion of Gymnastics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category" data-aos="fade-up">
+                    <h3 class="category-title">
+                        <span class="category-icon">◆</span>
+                        Programming
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon python">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" />
+                                </svg>
+                            </div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon java">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639" />
+                                </svg>
+                            </div>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon matlab">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M4.5 12.75l6-6 6 6-6 6-6-6z" />
+                                </svg>
+                            </div>
+                            <span class="skill-name">MATLAB</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon labview">
+                                <span>LV</span>
+                            </div>
+                            <span class="skill-name">LabVIEW</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">
+                        <span class="category-icon">◆</span>
+                        CAD & Modeling
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon solidworks">SW</div>
+                            <span class="skill-name">SolidWorks</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon catia">
+                                <span>CA</span>
+                            </div>
+                            <span class="skill-name">CATIA</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon dx">3DX</div>
+                            <span class="skill-name">3DExperience</span>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <span class="category-icon">◆</span>
+                        Languages
+                    </h3>
+                    <div class="languages-grid">
+                        <div class="language-card">
+                            <div class="language-flag">FR</div>
+                            <div class="language-info">
+                                <span class="language-name">French</span>
+                                <span class="language-level">Native</span>
+                            </div>
+                            <div class="language-bar" style="--level: 100%"></div>
+                        </div>
+                        <div class="language-card">
+                            <div class="language-flag">EN</div>
+                            <div class="language-info">
+                                <span class="language-name">English</span>
+                                <span class="language-level">TOEIC 860 (B2+)</span>
+                            </div>
+                            <div class="language-bar" style="--level: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Notable Projects & Activities</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured clickable" data-aos="fade-up" data-modal="sunspear">
+                    <div class="project-image">
+                        <!-- Rocket Launch Animation -->
+                        <div class="project-animation rocket-animation">
+                            <svg viewBox="0 0 200 200" class="rocket-svg">
+                                <!-- Sky gradient background -->
+                                <defs>
+                                    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:hsl(230, 30%, 15%)" />
+                                        <stop offset="100%" style="stop-color:hsl(210, 60%, 25%)" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="200" height="200" fill="url(#skyGradient)" />
+                                <!-- Stars -->
+                                <circle cx="30" cy="25" r="1" fill="white" class="star s1" />
+                                <circle cx="170" cy="40" r="1.5" fill="white" class="star s2" />
+                                <circle cx="50" cy="60" r="1" fill="white" class="star s3" />
+                                <circle cx="150" cy="80" r="1" fill="white" class="star s4" />
+                                <circle cx="80" cy="30" r="1.5" fill="white" class="star s5" />
+                                <!-- Altitude indicator -->
+                                <text x="175" y="20" class="altitude-text">10km</text>
+                                <line x1="185" y1="25" x2="185" y2="180" class="altitude-line" />
+                                <line x1="180" y1="180" x2="190" y2="180" class="altitude-tick" />
+                                <line x1="183" y1="100" x2="187" y2="100" class="altitude-tick" />
+                                <line x1="180" y1="25" x2="190" y2="25" class="altitude-tick" />
+                                <!-- Rocket -->
+                                <g class="rocket-body" transform="translate(100, 140)">
+                                    <!-- Flame/exhaust -->
+                                    <g class="flame">
+                                        <ellipse cx="0" cy="35" rx="8" ry="20" class="flame-outer" />
+                                        <ellipse cx="0" cy="32" rx="5" ry="15" class="flame-middle" />
+                                        <ellipse cx="0" cy="30" rx="3" ry="10" class="flame-inner" />
+                                    </g>
+                                    <!-- Rocket body -->
+                                    <path d="M -10,20 L -10,-30 Q -10,-45 0,-55 Q 10,-45 10,-30 L 10,20 Z"
+                                        class="rocket-hull" />
+                                    <!-- Nose cone -->
+                                    <ellipse cx="0" cy="-50" rx="6" ry="8" class="nose-cone" />
+                                    <!-- Fins -->
+                                    <path d="M -10,20 L -20,35 L -10,30 Z" class="rocket-fin" />
+                                    <path d="M 10,20 L 20,35 L 10,30 Z" class="rocket-fin" />
+                                    <!-- Window -->
+                                    <circle cx="0" cy="-20" r="5" class="rocket-window" />
+                                    <!-- Details -->
+                                    <line x1="-8" y1="0" x2="8" y2="0" class="rocket-detail" />
+                                    <line x1="-8" y1="10" x2="8" y2="10" class="rocket-detail" />
+                                </g>
+                                <!-- Smoke trail -->
+                                <g class="smoke-trail">
+                                    <circle cx="100" cy="180" r="6" class="smoke smoke-1" />
+                                    <circle cx="95" cy="190" r="8" class="smoke smoke-2" />
+                                    <circle cx="105" cy="195" r="5" class="smoke smoke-3" />
+                                </g>
+                                <!-- Speed lines -->
+                                <g class="speed-lines">
+                                    <line x1="60" y1="100" x2="60" y2="130" class="speed-line" />
+                                    <line x1="70" y1="110" x2="70" y2="135" class="speed-line" />
+                                    <line x1="130" y1="105" x2="130" y2="130" class="speed-line" />
+                                    <line x1="140" y1="115" x2="140" y2="140" class="speed-line" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Club Project</span>
+                        <h3 class="project-title">Sunspear Hypersonic Rocket</h3>
+                        <p class="project-description">
+                            Member of the Sunspear project at SCUBE, SUPAERO's biggest engineering club.
+                            Working on developing a hypersonic rocket designed to reach 10km altitude.
+                            Contributing to the electronics and sponsorship teams.
+                        </p>
+                        <div class="project-tags">
+                            <span>Hypersonics</span>
+                            <span>Electronics</span>
+                            <span>Team Project</span>
+                        </div>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                </div>
+
+                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="100" data-modal="course">
+                    <div class="project-image">
+                        <!-- Racing Car Animation -->
+                        <div class="project-animation racing-animation">
+                            <svg viewBox="0 0 200 150" class="racing-svg">
+                                <!-- Track -->
+                                <rect x="0" y="110" width="200" height="40" class="track" />
+                                <line x1="0" y1="120" x2="200" y2="120" class="track-line" />
+                                <!-- Moving track markers -->
+                                <g class="track-markers">
+                                    <rect x="20" y="125" width="30" height="3" class="marker m1" />
+                                    <rect x="80" y="125" width="30" height="3" class="marker m2" />
+                                    <rect x="140" y="125" width="30" height="3" class="marker m3" />
+                                </g>
+                                <!-- Race car -->
+                                <g class="race-car" transform="translate(100, 90)">
+                                    <!-- Car body -->
+                                    <path d="M -35,10 L -30,0 L -15,-8 L 20,-8 L 35,0 L 35,10 L -35,10 Z"
+                                        class="car-body" />
+                                    <!-- Windshield -->
+                                    <path d="M -15,-8 L -10,-15 L 10,-15 L 15,-8 Z" class="car-windshield" />
+                                    <!-- Wheels -->
+                                    <g class="wheel wheel-back">
+                                        <circle cx="-22" cy="15" r="8" class="tire" />
+                                        <circle cx="-22" cy="15" r="4" class="rim" />
+                                        <line x1="-22" y1="11" x2="-22" y2="19" class="spoke" />
+                                        <line x1="-26" y1="15" x2="-18" y2="15" class="spoke" />
+                                    </g>
+                                    <g class="wheel wheel-front">
+                                        <circle cx="22" cy="15" r="8" class="tire" />
+                                        <circle cx="22" cy="15" r="4" class="rim" />
+                                        <line x1="22" y1="11" x2="22" y2="19" class="spoke" />
+                                        <line x1="18" y1="15" x2="26" y2="15" class="spoke" />
+                                    </g>
+                                    <!-- Racing stripes -->
+                                    <line x1="-25" y1="2" x2="30" y2="2" class="racing-stripe" />
+                                    <line x1="-20" y1="6" x2="32" y2="6" class="racing-stripe" />
+                                    <!-- Number -->
+                                    <text x="0" y="5" class="car-number">42</text>
+                                </g>
+                                <!-- Speed effect -->
+                                <g class="speed-effect">
+                                    <line x1="30" y1="85" x2="50" y2="85" class="speed" />
+                                    <line x1="25" y1="95" x2="55" y2="95" class="speed" />
+                                    <line x1="30" y1="105" x2="45" y2="105" class="speed" />
+                                </g>
+                                <!-- Finish flag -->
+                                <g class="finish-flag" transform="translate(175, 50)">
+                                    <rect x="0" y="0" width="3" height="60" class="flag-pole" />
+                                    <g class="flag">
+                                        <rect x="3" y="0" width="8" height="8" fill="white" />
+                                        <rect x="11" y="0" width="8" height="8" fill="#333" />
+                                        <rect x="3" y="8" width="8" height="8" fill="#333" />
+                                        <rect x="11" y="8" width="8" height="8" fill="white" />
+                                        <rect x="3" y="16" width="8" height="8" fill="white" />
+                                        <rect x="11" y="16" width="8" height="8" fill="#333" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Competition</span>
+                        <h3 class="project-title">Course En Cours</h3>
+                        <p class="project-description">
+                            Led a team as Head of Project and Sponsor Manager for the "Course En Cours"
+                            national competition. Designed and raced a miniaturized electric car,
+                            managing sponsorships and team coordination.
+                        </p>
+                        <div class="project-tags">
+                            <span>Leadership</span>
+                            <span>Design</span>
+                            <span>Racing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="200" data-modal="ulm">
+                    <div class="project-image">
+                        <!-- ULM Stall Sensor Animation -->
+                        <div class="project-animation ulm-animation">
+                            <svg viewBox="0 0 200 150" class="ulm-svg">
+                                <!-- Sky background -->
+                                <rect width="200" height="150" class="sky-bg" />
+                                <!-- Clouds -->
+                                <g class="clouds">
+                                    <ellipse cx="30" cy="30" rx="20" ry="10" class="cloud c1" />
+                                    <ellipse cx="45" cy="25" rx="15" ry="8" class="cloud c1" />
+                                    <ellipse cx="160" cy="45" rx="18" ry="9" class="cloud c2" />
+                                    <ellipse cx="175" cy="40" rx="12" ry="7" class="cloud c2" />
+                                </g>
+                                <!-- Wing cross-section -->
+                                <g class="wing-section" transform="translate(100, 80)">
+                                    <!-- Airflow lines above wing -->
+                                    <path d="M -60,0 Q -30,-15 0,-12 Q 40,-8 70,-5" class="airflow flow-1" />
+                                    <path d="M -60,-5 Q -20,-22 10,-18 Q 50,-12 70,-8" class="airflow flow-2" />
+                                    <path d="M -60,-12 Q -10,-30 20,-25 Q 55,-18 70,-12" class="airflow flow-3" />
+                                    <!-- Wing profile (airfoil) -->
+                                    <path d="M -50,0 Q -30,-20 0,-15 Q 40,-5 55,0 Q 40,8 0,5 Q -30,2 -50,0 Z"
+                                        class="wing-airfoil" />
+                                    <!-- Airflow lines below wing -->
+                                    <path d="M -60,5 Q -20,10 10,8 Q 50,5 70,3" class="airflow flow-4" />
+                                    <!-- Sensor on wing -->
+                                    <circle cx="-20" cy="-10" r="4" class="sensor-dot" />
+                                    <circle cx="-20" cy="-10" r="8" class="sensor-ring" />
+                                </g>
+                                <!-- Angle indicator -->
+                                <g class="angle-indicator" transform="translate(160, 100)">
+                                    <line x1="0" y1="0" x2="30" y2="0" class="angle-base" />
+                                    <line x1="0" y1="0" x2="25" y2="-15" class="angle-line" />
+                                    <path d="M 15,0 A 15,15 0 0 0 12,-8" class="angle-arc" />
+                                    <text x="20" y="-5" class="angle-text">α</text>
+                                </g>
+                                <!-- Warning indicator -->
+                                <g class="warning-light" transform="translate(20, 120)">
+                                    <circle cx="0" cy="0" r="12" class="warning-bg" />
+                                    <text x="0" y="5" class="warning-text">!</text>
+                                </g>
+                                <!-- Status text -->
+                                <text x="100" y="140" class="status-text">Monitoring Angle of Attack</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Research</span>
+                        <h3 class="project-title">ULM Stall Alert Sensor</h3>
+                        <p class="project-description">
+                            Developed during the first year at IUT, this project uses a sensor to alert
+                            ultralight aircraft (ULM) pilots of critical stall angles. Presented at the
+                            Day of Science 2022.
+                        </p>
+                        <div class="project-tags">
+                            <span>Sensors</span>
+                            <span>Aviation Safety</span>
+                            <span>Research</span>
+                        </div>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                </div>
+
+                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="300" data-modal="treasurer">
+                    <div class="project-image">
+                        <div class="project-placeholder treasury">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Leadership</span>
+                        <h3 class="project-title">Apprenticeship Club Treasurer</h3>
+                        <p class="project-description">
+                            Managing the treasury of the SUPAERO Apprenticeship Association.
+                            Working closely with club members to handle financial aspects and
+                            budget allocations for club activities.
+                        </p>
+                        <div class="project-tags">
+                            <span>Finance</span>
+                            <span>Management</span>
+                            <span>Association</span>
+                        </div>
+                        <span class="click-hint">Click for details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">
+                    I'm currently looking for new opportunities in aerospace engineering.
+                    Feel free to reach out if you'd like to connect!
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card" data-aos="fade-up">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:leo.quesnoit@gmail.com">leo.quesnoit@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+33695110773">+33 6 95 11 07 73</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon linkedin">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/léo-quesnoit/" target="_blank"
+                                rel="noopener noreferrer">Connect with me</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card location" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path
+                                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Toulouse, France</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cta-content">
+                        <h3>Open for Opportunities</h3>
+                        <p>
+                            Whether you have a question, a project idea, or just want to say hello,
+                            I'd love to hear from you. I'm particularly interested in positions in
+                            aerospace engineering, space systems, and flight operations.
+                        </p>
+                        <a href="mailto:leo.quesnoit@gmail.com" class="btn btn-primary btn-large">
+                            <span>Send me an Email</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">LQ</span>
+                    <p>Aerospace Engineering Student</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:leo.quesnoit@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/léo-quesnoit/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Léo Quesnoit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="modal-content" id="modal-content">
+                <!-- Content will be injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
