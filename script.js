@@ -572,7 +572,7 @@ const modalData = {
             <h4>Program Overview</h4>
             <p>A comprehensive 3-year engineering program combining academic excellence with extensive industrial 
             experience. The curriculum focuses on the industrialization of aerospace systems, bridging the gap 
-            between design (R&D) and production.</p>
+            between R&D and Production.</p>
             
             <h4>Key Competencies</h4>
             <ul>
@@ -595,7 +595,7 @@ const modalData = {
             </ul>
             
             <h4>Professional Integration</h4>
-            <p>The program includes 50% of time spent in the company (Airbus Defence and Space), allowing for 
+            <p>The program involves 50% of the time spent at the company (Airbus Defence and Space), allowing for 
             progressive responsibility and direct application of academic concepts to real-world industrial challenges.</p>
             
             <div class="modal-skills">
