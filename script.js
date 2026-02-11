@@ -563,6 +563,50 @@ const modalData = {
                 <span>Communication</span>
             </div>
         `
+    },
+    supaero: {
+        badge: 'Engineering Curriculum',
+        title: 'Industrialization & Methods Engineer',
+        subtitle: 'ISAE-SUPAERO Apprenticeship Program • 2023 - 2026',
+        content: `
+            <h4>Program Overview</h4>
+            <p>A comprehensive 3-year engineering program combining academic excellence with extensive industrial 
+            experience. The curriculum focuses on the industrialization of aerospace systems, bridging the gap 
+            between design (R&D) and production.</p>
+            
+            <h4>Key Competencies</h4>
+            <ul>
+                <li><strong>Aerospace Engineering:</strong> Flight mechanics, aerodynamics, propulsion, aircraft architecture, and space systems design.</li>
+                <li><strong>Industrialization & Methods:</strong> Manufacturing processes, quality management (Lean, Six Sigma), supply chain, and Industry 4.0 technologies.</li>
+                <li><strong>Embedded Systems:</strong> Avionics, real-time systems, sensors, and telecommunications.</li>
+                <li><strong>Project Management:</strong> Leading complex technical projects, financial analysis, and team management.</li>
+            </ul>
+            
+            <h4>Core Modules & Projects</h4>
+            <ul>
+                <li><strong>Scientific Foundation:</strong> Applied Mathematics, Fluid Mechanics, Thermodynamics, Signal Processing.</li>
+                <li><strong>Technical Projects:</strong>
+                    <ul>
+                        <li><em>Research & Development Project (100h):</em> Innovation in aerospace technologies.</li>
+                        <li><em>Innovation & Design Project (90h):</em> End-to-end product development.</li>
+                    </ul>
+                </li>
+                <li><strong>Digital Skills:</strong> Python programming, Data Analysis, AI, and CAD/CAM (CATIA, 3DExperience).</li>
+            </ul>
+            
+            <h4>Professional Integration</h4>
+            <p>The program includes 50% of time spent in the company (Airbus Defence and Space), allowing for 
+            progressive responsibility and direct application of academic concepts to real-world industrial challenges.</p>
+            
+            <div class="modal-skills">
+                <span>Aerospace</span>
+                <span>Industrialization</span>
+                <span>Project Management</span>
+                <span>Quality (Lean/Six Sigma)</span>
+                <span>Systems Engineering</span>
+                <span>Avionics</span>
+            </div>
+        `
     }
 };
 
