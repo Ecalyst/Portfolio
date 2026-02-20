@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leoquesnoit.netlify.app/sitemap.xml

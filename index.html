@@ -8,6 +8,48 @@
         content="Léo Quesnoit - Aerospace Engineering Student at ISAE-SUPAERO, Toulouse. Specializing in space systems and flight operations.">
     <meta name="keywords"
         content="aerospace engineer, ISAE-SUPAERO, Airbus, space, engineering student, MSR-ERO, Mars Sample Return">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Léo Quesnoit | Aerospace Engineering Student at ISAE-SUPAERO">
+    <meta property="og:description"
+        content="Aerospace Engineering Student at ISAE-SUPAERO working at Airbus Defence and Space on Mars Sample Return. Specializing in space systems and flight operations.">
+    <meta property="og:url" content="https://leoquesnoit.netlify.app/">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Léo Quesnoit | Aerospace Engineering Student">
+    <meta name="twitter:description"
+        content="Aerospace Engineering Student at ISAE-SUPAERO working at Airbus Defence and Space on Mars Sample Return.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://leoquesnoit.netlify.app/">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Léo Quesnoit",
+        "url": "https://leoquesnoit.netlify.app/",
+        "jobTitle": "Aerospace Engineering Student",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Airbus Defence and Space"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "ISAE-SUPAERO"
+        },
+        "knowsAbout": ["Aerospace Engineering", "Space Systems", "Flight Operations", "Mars Sample Return", "Telemetry"],
+        "sameAs": [
+            "https://www.linkedin.com/in/léo-quesnoit/",
+            "https://github.com/leo-quesnoit"
+        ]
+    }
+    </script>
+
     <title>Léo Quesnoit | Aerospace Engineering Student</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +60,9 @@
 </head>
 
 <body>
+    <!-- Skip to Content -->
+    <a href="#about" class="skip-to-content">Skip to main content</a>
+
     <!-- Custom Cursor -->
     <div class="cursor-dot" id="cursor-dot"></div>
     <div class="cursor-outline" id="cursor-outline"></div>
@@ -36,7 +81,7 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">LQ</a>
             <ul class="nav-menu" id="nav-menu">
@@ -45,8 +90,21 @@
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="Leo-Quesnoit-CV.pdf" class="nav-link" download>Resume</a></li>
                 <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+                <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    width="18" height="18">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+                <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    width="18" height="18">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+            </button>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -101,6 +159,13 @@
                 </a>
                 <a href="#contact" class="btn btn-secondary">
                     <span>Get In Touch</span>
+                </a>
+                <a href="Leo-Quesnoit-CV.pdf" class="btn btn-secondary" download aria-label="Download Resume PDF">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                    </svg>
+                    <span>Resume</span>
                 </a>
             </div>
             <div class="hero-stats">
@@ -241,7 +306,7 @@
                     <div class="timeline-marker current">
                         <div class="marker-ring"></div>
                     </div>
-                    <div class="timeline-content clickable" data-modal="airbus">
+                    <div class="timeline-content clickable" data-modal="airbus" role="button" tabindex="0">
                         <!-- Satellite Communication Animation -->
                         <div class="experience-animation satellite-animation">
                             <svg viewBox="0 0 400 150" class="satellite-svg">
@@ -298,7 +363,7 @@
 
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content clickable" data-modal="thailand">
+                    <div class="timeline-content clickable" data-modal="thailand" role="button" tabindex="0">
                         <!-- Neural Network Animation -->
                         <div class="experience-animation neural-animation">
                             <svg viewBox="0 0 400 150" class="neural-svg">
@@ -378,7 +443,7 @@
 
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-marker"></div>
-                    <div class="timeline-content clickable" data-modal="cea">
+                    <div class="timeline-content clickable" data-modal="cea" role="button" tabindex="0">
                         <!-- Materials Characterization Animation -->
                         <div class="experience-animation materials-animation">
                             <svg viewBox="0 0 400 150" class="materials-svg">
@@ -499,7 +564,7 @@
                 <h2 class="section-title">Academic Background</h2>
             </div>
             <div class="education-grid">
-                <div class="edu-card featured clickable" data-aos="fade-up" data-modal="supaero">
+                <div class="edu-card featured clickable" data-aos="fade-up" data-modal="supaero" role="button" tabindex="0">
                     <div class="edu-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -698,7 +763,7 @@
                 <h2 class="section-title">Notable Projects & Activities</h2>
             </div>
             <div class="projects-grid">
-                <div class="project-card featured clickable" data-aos="fade-up" data-modal="sunspear">
+                <div class="project-card featured clickable" data-aos="fade-up" data-modal="sunspear" role="button" tabindex="0">
                     <div class="project-image">
                         <!-- Rocket Launch Animation -->
                         <div class="project-animation rocket-animation">
@@ -778,7 +843,7 @@
                     </div>
                 </div>
 
-                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="100" data-modal="course">
+                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="100" data-modal="course" role="button" tabindex="0">
                     <div class="project-image">
                         <!-- Racing Car Animation -->
                         <div class="project-animation racing-animation">
@@ -855,7 +920,7 @@
                     </div>
                 </div>
 
-                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="200" data-modal="ulm">
+                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="200" data-modal="ulm" role="button" tabindex="0">
                     <div class="project-image">
                         <!-- ULM Stall Sensor Animation -->
                         <div class="project-animation ulm-animation">
@@ -918,7 +983,7 @@
                     </div>
                 </div>
 
-                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="300" data-modal="treasurer">
+                <div class="project-card clickable" data-aos="fade-up" data-aos-delay="300" data-modal="treasurer" role="button" tabindex="0">
                     <div class="project-image">
                         <div class="project-placeholder treasury">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -1075,7 +1140,7 @@
     </footer>
 
     <!-- Detail Modal -->
-    <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="modal" id="modal">
             <button class="modal-close" id="modal-close" aria-label="Close modal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

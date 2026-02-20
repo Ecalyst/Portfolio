@@ -1,3 +1,46 @@
+// ===== Reduced Motion Check =====
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ===== Keyboard vs Mouse Detection =====
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Tab') {
+        document.body.classList.add('using-keyboard');
+    }
+});
+
+document.addEventListener('mousedown', () => {
+    document.body.classList.remove('using-keyboard');
+});
+
+// ===== Theme Toggle =====
+const themeToggle = document.getElementById('theme-toggle');
+
+function getPreferredTheme() {
+    const stored = localStorage.getItem('theme');
+    if (stored) return stored;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+}
+
+function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+}
+
+setTheme(getPreferredTheme());
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+}
+
+window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+        setTheme(e.matches ? 'light' : 'dark');
+    }
+});
+
 // ===== DOM Elements =====
 const navbar = document.getElementById('navbar');
 const navToggle = document.getElementById('nav-toggle');
@@ -283,13 +326,10 @@ document.head.appendChild(markerStyle);
 const cards = document.querySelectorAll('.project-card, .edu-card, .highlight-card, .contact-card');
 
 cards.forEach(card => {
-    card.addEventListener('mouseenter', (e) => {
-        const { left, top, width, height } = card.getBoundingClientRect();
-        const x = e.clientX - left;
-        const y = e.clientY - top;
-
-        card.style.setProperty('--mouse-x', `${x}px`);
-        card.style.setProperty('--mouse-y', `${y}px`);
+    card.addEventListener('mousemove', (e) => {
+        const { left, top } = card.getBoundingClientRect();
+        card.style.setProperty('--mouse-x', `${e.clientX - left}px`);
+        card.style.setProperty('--mouse-y', `${e.clientY - top}px`);
     });
 });
 
@@ -611,9 +651,13 @@ const modalData = {
 };
 
 // Open modal function
+let modalTriggerElement = null;
+
 function openModal(modalId) {
     const data = modalData[modalId];
     if (!data) return;
+
+    modalTriggerElement = document.activeElement;
 
     modalContent.innerHTML = `
         <div class="modal-header">
@@ -627,21 +671,40 @@ function openModal(modalId) {
     `;
 
     modalOverlay.classList.add('active');
+    modalOverlay.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+
+    // Focus close button for keyboard users
+    setTimeout(() => modalClose.focus(), 100);
 }
 
 // Close modal function
 function closeModal() {
     modalOverlay.classList.remove('active');
+    modalOverlay.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+
+    // Return focus to trigger element
+    if (modalTriggerElement) {
+        modalTriggerElement.focus();
+        modalTriggerElement = null;
+    }
 }
 
-// Event listeners for opening modal
+// Event listeners for opening modal (click + keyboard)
 document.querySelectorAll('[data-modal]').forEach(element => {
     element.addEventListener('click', (e) => {
         e.preventDefault();
         const modalId = element.getAttribute('data-modal');
         openModal(modalId);
+    });
+
+    element.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            const modalId = element.getAttribute('data-modal');
+            openModal(modalId);
+        }
     });
 });
 
@@ -860,8 +923,13 @@ if (canvas) {
         }
     }, 2000);
 
-    // Animation loop
+    // Animation loop with off-screen pause
+    let particlesRunning = true;
+    let animationFrameId = null;
+
     function animateParticles() {
+        if (!particlesRunning) return;
+
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         particles.forEach(p => {
@@ -874,10 +942,34 @@ if (canvas) {
             s.draw();
         });
 
-        requestAnimationFrame(animateParticles);
+        animationFrameId = requestAnimationFrame(animateParticles);
     }
 
-    animateParticles();
+    // Pause canvas when hero is off-screen
+    const heroSection = document.getElementById('hero');
+    if (heroSection) {
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (!particlesRunning) {
+                        particlesRunning = true;
+                        animateParticles();
+                    }
+                } else {
+                    particlesRunning = false;
+                    if (animationFrameId) {
+                        cancelAnimationFrame(animationFrameId);
+                        animationFrameId = null;
+                    }
+                }
+            });
+        }, { threshold: 0 });
+        heroObserver.observe(heroSection);
+    }
+
+    if (!prefersReducedMotion) {
+        animateParticles();
+    }
 }
 
 // ===== Section Reveal on Scroll =====
