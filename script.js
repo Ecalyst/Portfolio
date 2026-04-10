@@ -388,7 +388,6 @@ const modalData = {
                 <span>Mission Operations</span>
                 <span>Satellite Communications</span>
                 <span>Python</span>
-                <span>MATLAB</span>
             </div>
         `
     },
@@ -430,7 +429,7 @@ const modalData = {
         content: `
             <h4>Research Context</h4>
             <p>The CEA is one of Europe's leading research institutions. I worked in the DTNM (Department of New Materials Technology)
-            on characterizing conductive inks printed by screen printing — an alternative to traditional PCBs for flexible
+            on characterizing conductive inks printed by screen printing, an alternative to traditional PCBs for flexible
             circuits, sensors and aerospace components.</p>
 
             <h4>Mission</h4>
@@ -459,38 +458,22 @@ const modalData = {
     sunspear: {
         badge: 'Club Project',
         title: 'Sunspear Hypersonic Rocket',
-        subtitle: 'SCUBE Engineering Club, ISAE-SUPAERO • 2023 - Present',
+        subtitle: 'SCUBE Engineering Club, ISAE-SUPAERO | 2023 | 2024',
         content: `
-            <h4>Project Vision</h4>
-            <p>Sunspear is an ambitious student project aiming to design, build, and launch a hypersonic rocket 
-            capable of reaching 10km altitude. This places us among the few student teams worldwide 
-            attempting such a technically challenging goal.</p>
-            
+            <h4>About</h4>
+            <p>Sunspear is a student project at SCUBE, the largest engineering club at ISAE-SUPAERO,
+            aiming to launch a hypersonic rocket to 10km altitude.</p>
+
             <h4>My Contributions</h4>
             <ul>
-                <li><strong>Electronics Team:</strong> Designing and integrating avionics systems including telemetry, GPS tracking, and recovery systems</li>
-                <li><strong>Sponsorship Team:</strong> Identifying and contacting potential industry sponsors, preparing sponsorship proposals and presentations</li>
-                <li>Participating in system-level design reviews and technical documentation</li>
-                <li>Contributing to ground station development for rocket telemetry reception</li>
-                <li>Collaborating with 50+ team members across multiple engineering disciplines</li>
+                <li>Secured sponsorships for the club</li>
+                <li>Contributed to the electronics team</li>
             </ul>
-            
-            <h4>Technical Challenges</h4>
-            <ul>
-                <li>Thermal management at hypersonic speeds</li>
-                <li>Reliable recovery system deployment at high altitudes</li>
-                <li>Robust communication system for real-time tracking</li>
-                <li>Structural integrity under extreme aerodynamic loads</li>
-            </ul>
-            
+
             <h4>Technologies</h4>
             <div class="modal-skills">
-                <span>Avionics</span>
-                <span>Telemetry</span>
-                <span>Propulsion</span>
-                <span>Project Management</span>
-                <span>SolidWorks</span>
-                <span>Electronics Design</span>
+                <span>Electronics</span>
+                <span>Sponsorship</span>
             </div>
         `
     },
@@ -605,20 +588,20 @@ const modalData = {
         `
     },
     lia: {
-        badge: 'SaaS — EdTech',
-        title: 'Emendo — AI-Powered Grading Platform',
+        badge: 'SaaS |EdTech',
+        title: 'Emendo |AI-Powered Grading Platform',
         subtitle: 'Founder & Developer • emendo-edu.fr • 2025 - Present',
         link: 'https://emendo-edu.fr',
         content: `
             <h4>The Problem</h4>
-            <p>French teachers spend hours grading student papers — often 30+ copies per assignment.
+            <p>French teachers spend hours grading student papers, often 30+ copies per assignment.
             Emendo automates the heavy lifting: AI suggests grades and feedback, while the teacher stays
             in full control to validate, edit, and finalize every result.</p>
 
             <h4>Key Features</h4>
             <ul>
                 <li><strong>AI-Powered Grading:</strong> Upload student copies (PDF, images, text), and Claude AI analyzes each one against the teacher's rubric and answer key</li>
-                <li><strong>Human-in-the-Loop:</strong> Every AI grade starts as "pending review" — the teacher validates, edits notes and feedback, then confirms (GDPR Article 22 compliant)</li>
+                <li><strong>Human-in-the-Loop:</strong> Every AI grade starts as "pending review", the teacher validates, edits notes and feedback, then confirms (GDPR Article 22 compliant)</li>
                 <li><strong>Class Management:</strong> Organize students by class, track correction history, and view per-student progress over time</li>
                 <li><strong>Smart Cost Optimization:</strong> Prompt caching on reference documents (~7x cost reduction) and parallel grading in chunks of 3 (~3x faster)</li>
                 <li><strong>Export & Analytics:</strong> CSV export of results, statistics dashboard with class performance charts</li>
@@ -637,7 +620,7 @@ const modalData = {
                 <li>Row Level Security on all tables (full user isolation)</li>
                 <li>CORS restrictions, rate limiting, credit system with crash recovery</li>
                 <li>GDPR foundations: privacy policy, consent, account deletion, data rectification</li>
-                <li>Security audit completed — all critical and high-priority issues resolved</li>
+                <li>Security audit completed, all critical and high-priority issues resolved</li>
             </ul>
 
             <h4>Status</h4>
