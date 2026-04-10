@@ -1077,8 +1077,10 @@ body {
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
     display: flex;
-    gap: var(--space-lg);
+    flex-direction: column;
+    gap: var(--space-md);
     transition: var(--transition-base);
+    overflow: hidden;
 }
 
 .edu-card:hover {
