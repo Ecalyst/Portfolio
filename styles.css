@@ -2899,30 +2899,19 @@ body {
     stroke-dasharray: 20 10;
 }
 
-.racing-svg .marker {
-    fill: hsl(0, 0%, 40%);
-    animation: markerMove 1s linear infinite;
+.racing-svg .road-dashes {
+    stroke: hsl(0, 0%, 50%);
+    stroke-width: 3;
+    stroke-dasharray: 20 15;
+    animation: dashScroll 0.8s linear infinite;
 }
 
-.racing-svg .m1 {
-    animation-delay: 0s;
-}
-
-.racing-svg .m2 {
-    animation-delay: -0.33s;
-}
-
-.racing-svg .m3 {
-    animation-delay: -0.66s;
-}
-
-@keyframes markerMove {
+@keyframes dashScroll {
     from {
-        transform: translateX(0);
+        stroke-dashoffset: 0;
     }
-
     to {
-        transform: translateX(-60px);
+        stroke-dashoffset: -35;
     }
 }
 
