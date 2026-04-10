@@ -1378,7 +1378,8 @@ body {
 .project-card.featured {
     grid-column: span 2;
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .project-image {
@@ -1393,6 +1394,7 @@ body {
 
 .project-card.featured .project-image {
     height: 100%;
+    max-height: 280px;
 }
 
 .project-placeholder {
@@ -1955,6 +1957,23 @@ body {
 .modal-subtitle {
     font-size: 1.1rem;
     color: var(--text-secondary);
+}
+
+.modal-link {
+    display: inline-block;
+    margin-top: var(--space-sm);
+    padding: 8px 20px;
+    background: var(--accent);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+}
+
+.modal-link:hover {
+    opacity: 0.85;
 }
 
 .modal-body {
@@ -3154,6 +3173,70 @@ body {
     font-size: 8px;
     text-anchor: middle;
     font-family: var(--font-body);
+}
+
+/* === LIA Animation === */
+.lia-svg .lia-check {
+    animation: liaCheckPop 2.5s ease-in-out infinite;
+}
+
+@keyframes liaCheckPop {
+    0%, 60%, 100% {
+        transform: translate(30px, 48px) scale(1);
+        opacity: 1;
+    }
+    30% {
+        transform: translate(30px, 48px) scale(0);
+        opacity: 0;
+    }
+    45% {
+        transform: translate(30px, 48px) scale(1.2);
+        opacity: 1;
+    }
+}
+
+.lia-svg .lia-sparkle {
+    animation: liaSparkle 2.5s ease-in-out infinite;
+}
+
+@keyframes liaSparkle {
+    0%, 100% {
+        transform: translate(140px, 45px) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(140px, 45px) scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.lia-svg .lia-arrow path,
+.lia-svg .lia-arrow polygon {
+    animation: liaArrowPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes liaArrowPulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.lia-svg .lia-grade {
+    animation: liaGradeFade 2.5s ease-in-out infinite;
+}
+
+@keyframes liaGradeFade {
+    0%, 40% {
+        opacity: 0;
+        transform: translate(140px, 95px);
+    }
+    55%, 100% {
+        opacity: 1;
+        transform: translate(140px, 90px);
+    }
 }
 
 /* ===== Scroll Progress Bar ===== */

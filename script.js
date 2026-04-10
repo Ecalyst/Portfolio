@@ -426,32 +426,34 @@ const modalData = {
     },
     cea: {
         badge: 'Research Experience',
-        title: 'Research Intern',
+        title: 'Electrical & Morphological Characterization of Conductive Inks',
         subtitle: 'CEA (French Alternative Energies Commission), Grenoble • 2023 (11 weeks)',
         content: `
             <h4>Research Context</h4>
-            <p>The CEA is one of Europe's leading research institutions. I worked in the DTNM (Department of New Materials Technology), 
-            focusing on the characterization of conductive inks for printed electronics applications, which have potential 
-            uses in flexible circuits, sensors, and aerospace components.</p>
-            
-            <h4>Research Activities</h4>
+            <p>The CEA is one of Europe's leading research institutions. I worked in the DTNM (Department of New Materials Technology)
+            on characterizing conductive inks printed by screen printing — an alternative to traditional PCBs for flexible
+            circuits, sensors and aerospace components.</p>
+
+            <h4>Mission</h4>
             <ul>
-                <li>Developed and applied protocols for electrical characterization using four-point probe measurements</li>
-                <li>Performed morphological analysis using Scanning Electron Microscopy (SEM) and profilometry</li>
-                <li>Studied the relationship between screen printing parameters and ink conductivity</li>
-                <li>Analyzed the effects of curing temperature and time on electrical properties</li>
-                <li>Documented experimental procedures and results in detailed technical reports</li>
-                <li>Presented findings at weekly laboratory meetings</li>
+                <li><strong>Characterization protocol:</strong> Designed and implemented a resistivity measurement protocol combining mechanical profilometry (morphological analysis) and LCR meter measurements (electrical characterization)</li>
+                <li><strong>Data automation:</strong> Developed 3 Python programs to concatenate thousands of measurement files (DACTEM + profilometer), calculate resistivity, and generate automated PDF reports</li>
+                <li><strong>Error correction:</strong> Identified and corrected measurement errors from mask geometry defects and wire resistance, ensuring reproducible results</li>
+                <li><strong>Parametric study:</strong> Analyzed the effects of curing temperature, time, track width and length on resistivity</li>
             </ul>
-            
-            <h4>Equipment & Techniques Used</h4>
+
+            <h4>Key Results</h4>
+            <p>Validated the protocol against manufacturer datasheet values (measured 4.787×10⁻⁷ Ω·m vs. expected 4.5×10⁻⁷ Ω·m).
+            The automation tools are now used by CEA staff to reproducibly characterize new conductive inks.</p>
+
+            <h4>Equipment & Techniques</h4>
             <div class="modal-skills">
-                <span>SEM Microscopy</span>
-                <span>Electrical Characterization</span>
-                <span>Screen Printing</span>
                 <span>Profilometry</span>
-                <span>Materials Analysis</span>
-                <span>Lab Protocols</span>
+                <span>LCR Meter</span>
+                <span>Screen Printing</span>
+                <span>Python</span>
+                <span>Data Analysis</span>
+                <span>Materials Characterization</span>
                 <span>Technical Writing</span>
             </div>
         `
@@ -604,6 +606,59 @@ const modalData = {
             </div>
         `
     },
+    lia: {
+        badge: 'SaaS — EdTech',
+        title: 'Emendo — AI-Powered Grading Platform',
+        subtitle: 'Founder & Developer • emendo-edu.fr • 2025 - Present',
+        link: 'https://emendo-edu.fr',
+        content: `
+            <h4>The Problem</h4>
+            <p>French teachers spend hours grading student papers — often 30+ copies per assignment.
+            Emendo automates the heavy lifting: AI suggests grades and feedback, while the teacher stays
+            in full control to validate, edit, and finalize every result.</p>
+
+            <h4>Key Features</h4>
+            <ul>
+                <li><strong>AI-Powered Grading:</strong> Upload student copies (PDF, images, text), and Claude AI analyzes each one against the teacher's rubric and answer key</li>
+                <li><strong>Human-in-the-Loop:</strong> Every AI grade starts as "pending review" — the teacher validates, edits notes and feedback, then confirms (GDPR Article 22 compliant)</li>
+                <li><strong>Class Management:</strong> Organize students by class, track correction history, and view per-student progress over time</li>
+                <li><strong>Smart Cost Optimization:</strong> Prompt caching on reference documents (~7x cost reduction) and parallel grading in chunks of 3 (~3x faster)</li>
+                <li><strong>Export & Analytics:</strong> CSV export of results, statistics dashboard with class performance charts</li>
+            </ul>
+
+            <h4>Architecture</h4>
+            <ul>
+                <li><strong>Frontend:</strong> React 19, React Router 7, Tailwind CSS 4, Recharts</li>
+                <li><strong>Backend:</strong> Supabase (Auth, PostgreSQL with RLS, Storage, Edge Functions)</li>
+                <li><strong>AI Engine:</strong> Claude API (Sonnet) via Supabase Edge Function with fire-and-forget + polling pattern</li>
+                <li><strong>Deployment:</strong> Vercel with auto-deploy on push</li>
+            </ul>
+
+            <h4>Security & Compliance</h4>
+            <ul>
+                <li>Row Level Security on all tables (full user isolation)</li>
+                <li>CORS restrictions, rate limiting, credit system with crash recovery</li>
+                <li>GDPR foundations: privacy policy, consent, account deletion, data rectification</li>
+                <li>Security audit completed — all critical and high-priority issues resolved</li>
+            </ul>
+
+            <h4>Status</h4>
+            <p>MVP feature-complete (v1.4). Private beta with 10 teachers launching March 2026.
+            Commercial launch with freemium pricing planned for spring 2026.</p>
+
+            <h4>Tech Stack</h4>
+            <div class="modal-skills">
+                <span>React 19</span>
+                <span>Supabase</span>
+                <span>Claude API</span>
+                <span>Tailwind CSS</span>
+                <span>Edge Functions</span>
+                <span>Vercel</span>
+                <span>PostgreSQL</span>
+                <span>GDPR</span>
+            </div>
+        `
+    },
     supaero: {
         badge: 'Engineering Curriculum',
         title: 'Industrialization & Methods Engineer',
@@ -664,6 +719,7 @@ function openModal(modalId) {
             <span class="modal-badge">${data.badge}</span>
             <h2 class="modal-title">${data.title}</h2>
             <p class="modal-subtitle">${data.subtitle}</p>
+            ${data.link ? `<a href="${data.link}" target="_blank" rel="noopener noreferrer" class="modal-link">View Live Demo →</a>` : ''}
         </div>
         <div class="modal-body">
             ${data.content}
