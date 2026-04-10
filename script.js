@@ -458,7 +458,7 @@ const modalData = {
     sunspear: {
         badge: 'Club Project',
         title: 'Sunspear Hypersonic Rocket',
-        subtitle: 'SCUBE Engineering Club, ISAE-SUPAERO | 2023 | 2024',
+        subtitle: 'SCUBE Engineering Club, ISAE-SUPAERO · 2023-2024',
         content: `
             <h4>About</h4>
             <p>Sunspear is a student project at SCUBE, the largest engineering club at ISAE-SUPAERO,
@@ -588,8 +588,8 @@ const modalData = {
         `
     },
     lia: {
-        badge: 'SaaS |EdTech',
-        title: 'Emendo |AI-Powered Grading Platform',
+        badge: 'SaaS · EdTech',
+        title: 'Emendo · AI-Powered Grading Platform',
         subtitle: 'Founder & Developer • emendo-edu.fr • 2025 - Present',
         link: 'https://emendo-edu.fr',
         content: `
