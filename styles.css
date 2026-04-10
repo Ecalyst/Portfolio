@@ -2911,7 +2911,7 @@ body {
         stroke-dashoffset: 0;
     }
     to {
-        stroke-dashoffset: -35;
+        stroke-dashoffset: 35;
     }
 }
 
