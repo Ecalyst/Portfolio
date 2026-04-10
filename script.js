@@ -404,9 +404,8 @@ const modalData = {
             
             <h4>Key Achievements</h4>
             <ul>
-                <li>Developed and fine-tuned machine learning models using Python (TensorFlow/Keras) to predict electricity consumption patterns</li>
+                <li>Deployed and fine-tuned existing AI/ML models using Python to predict electricity consumption of a new region</li>
                 <li>Preprocessed and analyzed large datasets of historical energy consumption data</li>
-                <li>Implemented feature engineering techniques to improve model accuracy by 15%</li>
                 <li>Created data visualization dashboards to present predictions to stakeholders</li>
                 <li>Collaborated with Thai researchers, enhancing cross-cultural communication skills</li>
                 <li>Presented research findings to faculty members and industry partners</li>
