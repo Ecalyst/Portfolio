@@ -443,8 +443,7 @@ const modalData = {
             </ul>
 
             <h4>Key Results</h4>
-            <p>Validated the protocol against manufacturer datasheet values (measured 4.787×10⁻⁷ Ω·m vs. expected 4.5×10⁻⁷ Ω·m).
-            The automation tools are now used by CEA staff to reproducibly characterize new conductive inks.</p>
+            <p>The automation tools are now used by CEA staff to reproducibly characterize new conductive inks.</p>
 
             <h4>Equipment & Techniques</h4>
             <div class="modal-skills">
