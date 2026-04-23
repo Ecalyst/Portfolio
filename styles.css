@@ -1071,6 +1071,37 @@ body {
     gap: var(--space-lg);
 }
 
+.publications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: var(--space-lg);
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: var(--space-sm);
+    color: var(--primary, hsl(220, 100%, 60%));
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.pub-link:hover {
+    transform: translateX(2px);
+    opacity: 0.85;
+}
+
+.pub-link svg {
+    transition: transform 0.2s ease;
+}
+
+.pub-link:hover svg {
+    transform: translate(2px, -2px);
+}
+
 .edu-card {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
