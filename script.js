@@ -443,6 +443,8 @@ const modalData = {
             <h4>Key Results</h4>
             <p>The automation tools are now used by CEA staff to reproducibly characterize new conductive inks.</p>
 
+            <p><a href="papers/Quesnoit-2023-CEA-Encres-Conductrices.pdf" target="_blank" rel="noopener noreferrer">Read the full internship report (FR, PDF)</a></p>
+
             <h4>Equipment & Techniques</h4>
             <div class="modal-skills">
                 <span>Profilometry</span>
@@ -663,7 +665,7 @@ const modalData = {
                 <li><strong>Scientific Foundation:</strong> Applied Mathematics, Fluid Mechanics, Thermodynamics, Signal Processing.</li>
                 <li><strong>Technical Projects:</strong>
                     <ul>
-                        <li><em>Research & Development Project (100h):</em> Innovation in aerospace technologies.</li>
+                        <li><em>Research & Development Project (100h):</em> <a href="papers/Quesnoit-2025-Psychoacoustic-Study-Drone-Noise.pdf" target="_blank" rel="noopener noreferrer">Psychoacoustic Study of Drone Noise Perception</a> — measurements in the ISAE-SUPAERO anechoic chamber, analysed with MATLAB/SQAT.</li>
                         <li><em>Innovation & Design Project (90h):</em> End-to-end product development.</li>
                     </ul>
                 </li>
