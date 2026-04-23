@@ -374,7 +374,7 @@ const modalData = {
             <ul>
                 <li>Developing flight procedures for spacecraft operations, ensuring mission-critical sequences are robust and validated</li>
                 <li>Testing and validating telemetry reception systems to ensure reliable data transmission between Earth and the spacecraft</li>
-                <li>Designing telecommunication protocols for deep space communication scenarios</li>
+                <li>Authoring TC sequences using existing CCSDS telecommand frames for deep-space communication scenarios</li>
                 <li>Collaborating with international teams (ESA & NASA) on mission interface definitions</li>
                 <li>Writing and maintaining operational documentation for flight control teams</li>
                 <li>Participating in simulation campaigns to verify end-to-end mission scenarios</li>
@@ -665,7 +665,7 @@ const modalData = {
                 <li><strong>Scientific Foundation:</strong> Applied Mathematics, Fluid Mechanics, Thermodynamics, Signal Processing.</li>
                 <li><strong>Technical Projects:</strong>
                     <ul>
-                        <li><em>Research & Development Project (100h):</em> <a href="papers/Quesnoit-2025-Psychoacoustic-Study-Drone-Noise.pdf" target="_blank" rel="noopener noreferrer">Psychoacoustic Study of Drone Noise Perception</a> — measurements in the ISAE-SUPAERO anechoic chamber, analysed with MATLAB/SQAT.</li>
+                        <li><em>Research & Development Project (100h):</em> <a href="papers/Quesnoit-2025-Psychoacoustic-Study-Drone-Noise.pdf" target="_blank" rel="noopener noreferrer">Psychoacoustic Study of Drone Noise Perception</a>. Measurements in the ISAE-SUPAERO anechoic chamber, analysed with MATLAB/SQAT.</li>
                         <li><em>Innovation & Design Project (90h):</em> End-to-end product development.</li>
                     </ul>
                 </li>
